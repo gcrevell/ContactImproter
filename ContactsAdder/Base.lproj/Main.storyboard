@@ -18,17 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnP-fn-YwM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8I-kZ-EMp">
                                 <state key="normal" title="Delete"/>
                                 <connections>
-                                    <action selector="deleteContacts:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADx-0y-EE5"/>
+                                    <action selector="deleteContacts:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DwU-CL-eYF"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="cnP-fn-YwM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O1Y-wU-i9g"/>
-                            <constraint firstItem="cnP-fn-YwM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="giC-kl-CJo"/>
+                            <constraint firstItem="q8I-kZ-EMp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9LE-Lb-3Pt"/>
+                            <constraint firstItem="q8I-kZ-EMp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iB4-va-Dgr"/>
                         </constraints>
                     </view>
                 </viewController>

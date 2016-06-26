@@ -9,7 +9,8 @@
 import UIKit
 import Contacts
 
-let FAMILY_NAME = "iD Tech Test"
+let FAMILY_NAME = "iD Tech"
+let DEPARTMENT = "STUDENT ADDED WITH CONTANCT APP"
 
 class ViewController: UIViewController {
 
@@ -54,20 +55,31 @@ class ViewController: UIViewController {
     }
 
     @IBAction func deleteContacts(_ sender: AnyObject) {
-        let pred = CNContact.predicateForContacts(matchingName: "iD Tech")
+        let alert = UIAlertController(title: "Delete", message: "This will delete all contacts added by this app in your address book with the last name \(FAMILY_NAME).", preferredStyle: .alert)
         
-        let store = CNContactStore()
-        
-        let contacts = try! store.unifiedContacts(matching: pred, keysToFetch: [CNContactPhoneNumbersKey, CNContactGivenNameKey, CNContactFamilyNameKey])
-        
-        let req = CNSaveRequest()
-        
-        for contact in contacts {
-            if contact.familyName == FAMILY_NAME {
-                
-                req.delete(contact.mutableCopy())
+        alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (action) in
+            let pred = CNContact.predicateForContacts(matchingName: FAMILY_NAME)
+            
+            let store = CNContactStore()
+            
+            let contacts = try! store.unifiedContacts(matching: pred, keysToFetch: [CNContactPhoneNumbersKey, CNContactGivenNameKey, CNContactFamilyNameKey, CNContactDepartmentNameKey])
+            
+            let req = CNSaveRequest()
+            
+            for contact in contacts {
+                if contact.familyName == FAMILY_NAME && contact.departmentName == DEPARTMENT {
+                    
+                    req.delete(contact.mutableCopy() as! CNMutableContact)
+                }
             }
-        }
+            
+            try! store.execute(req)
+            print("Done")
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
     }
 
 }

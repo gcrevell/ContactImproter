@@ -66,6 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             newContact.givenName = row[1]
             newContact.note = "Class is \(row[2])"
             newContact.phoneNumbers = [CNLabeledValue(label: CNLabelPhoneNumberMain, value: CNPhoneNumber(stringValue: row[3]))]
+            newContact.departmentName = DEPARTMENT
 //            CNLabelPhoneNumberMain(CNPhoneNumber(stringValue: row[3]))
             
             let store = CNContactStore()
