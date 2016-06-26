@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C6F935C1D1F70AC0091A389 /* CSwiftV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6F935B1D1F70AC0091A389 /* CSwiftV.swift */; };
 		7CACF94A1D1F4C4A0031AE56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACF9491D1F4C4A0031AE56 /* AppDelegate.swift */; };
 		7CACF94C1D1F4C4A0031AE56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACF94B1D1F4C4A0031AE56 /* ViewController.swift */; };
 		7CACF94F1D1F4C4A0031AE56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CACF94D1D1F4C4A0031AE56 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C6F935B1D1F70AC0091A389 /* CSwiftV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSwiftV.swift; path = "../../../../Downloads/CSwiftV-master/Sources/CSwiftV.swift"; sourceTree = "<group>"; };
 		7CACF9461D1F4C4A0031AE56 /* ContactsAdder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsAdder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CACF9491D1F4C4A0031AE56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CACF94B1D1F4C4A0031AE56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				7CACF9491D1F4C4A0031AE56 /* AppDelegate.swift */,
+				7C6F935B1D1F70AC0091A389 /* CSwiftV.swift */,
 				7CACF94B1D1F4C4A0031AE56 /* ViewController.swift */,
 				7CACF94D1D1F4C4A0031AE56 /* Main.storyboard */,
 				7CACF9501D1F4C4A0031AE56 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 				TargetAttributes = {
 					7CACF9451D1F4C4A0031AE56 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6YUP5Q2DLS;
 					};
 					7CACF9591D1F4C4A0031AE56 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -198,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CACF94C1D1F4C4A0031AE56 /* ViewController.swift in Sources */,
+				7C6F935C1D1F70AC0091A389 /* CSwiftV.swift in Sources */,
 				7CACF94A1D1F4C4A0031AE56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,10 +332,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ContactsAdder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Gabriel.Revells.ContactsAdder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -338,10 +346,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ContactsAdder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Gabriel.Revells.ContactsAdder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -388,6 +399,7 @@
 				7CACF9651D1F4C4A0031AE56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CACF9661D1F4C4A0031AE56 /* Build configuration list for PBXNativeTarget "ContactsAdderTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +408,7 @@
 				7CACF9681D1F4C4A0031AE56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
